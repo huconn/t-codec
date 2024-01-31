@@ -1,0 +1,10 @@
+prefix="@CMAKE_INSTALL_PREFIX@"
+exec_prefix="${prefix}"
+libdir="${prefix}/lib"
+includedir="${prefix}/include"
+
+Name: Telechips T-CODEC
+Description: Telechips T-CODEC Libraries and binaries
+Version: 1.0.0
+Libs: -L${libdir} @PC_LIB_DECODER@ @PC_LIB_ENCODER@
+Cflags: -I${includedir}
